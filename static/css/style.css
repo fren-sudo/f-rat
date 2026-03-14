@@ -182,7 +182,8 @@ body.sidebar-collapsed .sidebar{
 .player-title-wrap{min-width:0}
 .player-kicker{font-size:12px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
 .player-title{font-size:30px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:75vw}
-.player-back{display:inline-flex;align-items:center;justify-content:center;min-width:90px}
+.player-back{display:inline-flex;align-items:center;justify-content:center;min-width:90px}
+
 .player-panel{position:fixed;left:24px;right:24px;bottom:24px;z-index:30;padding:16px 18px;border-radius:20px;background:rgba(10,10,10,.76);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(8px)}
 .player-progress{position:relative;height:12px;border-radius:999px;background:#2d2d2d;margin-bottom:10px}
 .player-progress__buffer,.player-progress__bar{position:absolute;left:0;top:0;bottom:0;border-radius:999px}
@@ -348,7 +349,8 @@ body.sidebar-collapsed .sidebar{
 .player-top,
 .player-panel{
   transition:opacity .25s ease;
-}
+}
+
 
 
 .player-status-wrap{display:flex;flex-direction:column;gap:6px}
@@ -363,4 +365,93 @@ body.sidebar-collapsed .sidebar{
   max-height:50vh;
   overflow:auto;
 }
+/* PLAYER TV SIZE FIX */
+.player-top{
+  padding: 14px 18px !important;
+  gap: 12px !important;
+}
 
+.player-kicker{
+  font-size: 10px !important;
+  letter-spacing: .14em !important;
+}
+
+.player-title{
+  font-size: 22px !important;
+  max-width: 68vw !important;
+}
+
+.player-back{
+  min-width: 74px !important;
+  height: 40px !important;
+  padding: 0 12px !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+}
+
+.player-panel{
+  left: 18px !important;
+  right: 18px !important;
+  bottom: 18px !important;
+  padding: 12px 14px !important;
+  border-radius: 16px !important;
+}
+
+.player-progress{
+  height: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.player-times{
+  font-size: 13px !important;
+  margin-bottom: 8px !important;
+}
+
+.player-actions__left,
+.player-actions__right{
+  gap: 8px !important;
+}
+
+.player-btn,
+.hero-btn{
+  height: 40px !important;
+  padding: 0 12px !important;
+  font-size: 13px !important;
+  border-radius: 10px !important;
+  min-width: auto !important;
+}
+
+.player-status{
+  margin-top: 8px !important;
+  font-size: 12px !important;
+}
+
+.player-health{
+  font-size: 12px !important;
+}
+
+.modal__dialog--error{
+  max-width: 520px !important;
+  padding: 18px !important;
+}
+
+@media (max-width: 960px){
+  .player-title{
+    font-size: 18px !important;
+    max-width: 58vw !important;
+  }
+
+  .player-btn,
+  .hero-btn{
+    height: 36px !important;
+    padding: 0 10px !important;
+    font-size: 12px !important;
+  }
+
+  .player-panel{
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    padding: 10px 12px !important;
+  }
+}
